@@ -1,4 +1,43 @@
 body {
-	font-size: 300px;
+	font-size: 100%;
+	font-family: Arial, sans-serif;
+	background-color: rgb(241, 241, 241);
+	padding: 50px;
 }
 
+h1 {
+	margin: 40px 0px;
+}
+
+h2 {
+	margin: 30px 0px;
+}
+
+p {
+	margin: 15px 0px;
+}
+
+li {
+	margin: 10px 0px;
+}
+
+a, a:visited {
+	color:rgb(0, 150, 255);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	margin: 20px 0px;
+}
+
+.hintbox {
+	background: linear-gradient(0deg, rgba(180, 180, 180, 0.8), rgba(185, 185, 185, 0) 70.71%),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70.71%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70.71%),
+            linear-gradient(270deg, rgba(185, 185, 185, 0.8), rgba(170, 170, 170, 0) 70.71%);
+	border: 2px solid black;
+	padding: 25px;
+	margin: 20px 0px;
+	max-width: 100%;
+}
