@@ -4,6 +4,8 @@
 <head>
 	<link rel="shortcut icon" href="https://roboloid.github.io/ffxiv/favicon.ico">
 	<link rel="stylesheet" href="./../styles.css">
+	<link rel="stylesheet" href="./../navigation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
 
 	<!-- Metadata start -->
 	<html prefix="og: http://ogp.me/ns#"></html>
@@ -17,6 +19,16 @@
 </head>
 
 <body>
+	<script>
+        $(function(){
+            $("#navbar").load("./../navigation.html");
+        });
+    </script>
+
+    <div id="navbar">
+
+    </div>
+
 	<img src="./../images/rubicante/header.png">
 
 	<h1>Mount Ordeals (Extreme)</h1>
