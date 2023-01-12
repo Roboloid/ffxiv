@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="https://roboloid.github.io/ffxiv/favicon.ico">
+	<link rel="stylesheet" href="./../styles.css">
+	<link rel="stylesheet" href="./../navigation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+	<!-- Metadata start -->
+	<html prefix="og: http://ogp.me/ns#"></html>
+	<meta property="og:title" content="Asphodelos: The Fourth Circle (Savage)">
+	<meta property="og:description" content="A guide for Asphodelos: The Fourth Circle (Savage).">
+	<meta property="og:site_name" content="Roboloid's FFXIV Page" >
+	<meta property="og:image" content="https://roboloid.github.io/ffxiv/images/p4sp2/header.png">
+	<!-- Metadata end -->
+
+	<title>Asphodelos: The Fourth Circle (Savage)</title>
+</head>
+
+<body>
+	<script>
+        $(function(){
+            $("#navbar").load("./../navigation.html");
+        });
+    </script>
+
+    <div id="navbar">
+
+    </div>
+
+	<img src="./../images/p4sp2/header.png">
+
+	<h1>Asphodelos: The Fourth Circle (Savage) Phase 2</h1>
+
+	<p>Asphodelos: The Fourth Circle (Savage) is a high-end duty added in patch 6.05.
+		The fight can be unlocked by speaking to Nemjiji in Labyrinthos (8.4, 27.4) after completing Asphodelos: The Fourth Circle.
+	</p>
+
+	<p>The minimum ilvl required to enter this fight is 580.</p>
+
+	<h2>Hesperos's Abilities</h2>
+	<ul>
+		<li><b><u>Searing Stream</u></b>: A heavy raidwide attack.</li>
+		<li><b><u>Nearsight</u></b>: Two AOEs that target the two closest players.</li>
+		<li><b><u>Farsight</u></b>: Two AOEs that target the two farthest players.</li>
+		<li><b><u>Demigod Double</u></b>: An AOE tankbuster that must be shared by two tanks. One tank can take it with their invulnerability.</li>
+	</ul>
+
+	<p>Phase 2 is split into 6 big mechanics: Act 1, Act 2, Act 3, Act 4, Finale, and Curtain Call. The toolboxes created by Zetherea Maxwell are very helpful, and I will be linking them throughout the guide.</p>
+
+
+	<h2 id="act1">Akanthai: Act 1</h2>
+	<div class="hintbox">
+		<a href="https://ff14.toolboxgaming.space/?id=288349127241461&preview=1" target="_blank"><b>Act 1 Toolbox</b></a>
+	</div>
+	<p>Hesperos will telegraph eight towers and four large AOEs, then place a thorn over them to hide them.</p>
+	<p>After a <b>Searing Stream</b> raidwide, Hesperos will cast <b>Wreath of Thorns</b> and tether to the thorns in the order they will be resolved. The order is two N/S or E/W AOEs, the eight towers, then the
+		last two E/W or N/S AOEs. If he tethers to the N/S thorns first, have the party be E/W to avoid them, and vice versa if he tethers to the E/W thorns first. After the first explosion, take your intercard
+		towers. After the towers are resolved, keep moving to the next cardinal to dodge the remaining two AOEs.</p>
+	<p>After the thorns resolve, Hesperos will cast <b>Nearsight</b> or <b>Farsight</b>. Ensure that the tanks are the two closest or two farthest players to take the AOEs.</p>
+
+	<h2 id="act2">Akanthai: Act 2</h2>
+	<div class="hintbox">
+		<a href="https://ff14.toolboxgaming.space/?id=048342144241461&preview=1" target="_blank"><b>Act 2 Toolbox</b></a>
+	</div>
+	<p>Hesperos will spawn a tower and an AOE at each cardinal, with the tower on the left and the AOE on the right (looking at the wall from the center of the field). Then he will cover them up with
+		<b>Wreath of Thorns</b>. He will tether to two towers at opposite cardinals, then two AOEs at opposite cardinals. Then he will tether to the two other AOEs and towers. The opposingcardinals that have their
+		tower tethered first (the left thorn) are the safe cardinals you want to go to first.</p>
+	<p>When <b>Wreath of Thorns</b> finishes casting, orbs will spawn on top of every player (except one tank) and all players will be tethered in role pairs.</p>
+	<ul>
+		<li>One healer + one tank will be tethered, with the healer having a purple orb and the tank having nothing.</li>
+		<li>One healer + one tank will be tethered, with both players having fire orbs over them.</li>
+		<li>One DPS + one DPS will be tethered, with both players having wind orbs over them.</li>
+		<li>One DPS + one DPS will be tethered, with both players having fire orbs over them.</li>
+	</ul>
+	<p>When players with a purple orb stretch their tether, everyone will take light raidwide damage and get a 2 second Magic Vulnerability debuff.</p>
+	<p>When players with a fire orb stretch their tether, a stack AOE will detonate on each of them. Two other players need to stack with each fire tether stretcher for a total of three people in the stack.
+		I use a priority system for PF and mark all DPS 1-4, and the DPS with the lower number goes clockwise while the DPS with the higher number goes counterclockwise.
+	</p>
+	<p>Players with wind orbs should not stretch their tether, or they will die.</p>
+	<p>To resolve this mechanic, everyone except the purple healer and the nothing tank should stack in the center. The purple supports should stretch their tether as soon as possible for the Magic Vulnerability to
+		apply and fall off before fire stacks need to happen. Hesperos will cast <b>Dark Design</b>, and when the cast finishes, AOEs will be baited at everyone's position, hence why we want most of the party to
+		stack at the center. When the AOEs are baited, everyone will move.</p>
+	<p>For the first movement, where players go will depend on their orb and whether the safe cardinals are N/S or E/W.</p>
+	<ul>
+		<li><img src="./../images/common/TankRole.png" class="imgIcon">The nothing tank should move North or West to stretch, then take a tower after the tether breaks.</li>
+		<li><img src="./../images/common/HealerRole.png" class="imgIcon">The purple healer should move South or East to stretch, then take a tower after the tether breaks.</li>
+		<li><img src="./../images/common/TankRole.png" class="imgIcon">The fire tank should move South or East to stretch their tether.</li>
+		<li><img src="./../images/common/HealerRole.png" class="imgIcon">The fire healer should move North or West to stretch their tether.</li>
+		<li><img src="./../images/common/DPSRole.png" class="imgIcon">The two fire DPSes should move together South or East and stack on the fire tank who is stretching.</li>
+		<li><img src="./../images/common/DPSRole.png" class="imgIcon">The two wind DPSes should move together North or West and stack on the fire healer who is stretching.</li>
+	</ul>
+	<p>After the support fire stacks resolve and the first two towers are soaked, the second movement will happen.</p>
+	<ul>
+		<li><img src="./../images/common/TankRole.png" class="imgIcon">The nothing tank should move counterclockwise to soak the DPS's fire with the other tank.</li>
+		<li><img src="./../images/common/HealerRole.png" class="imgIcon">The purple healer should move clockwise to take a tower.</li>
+		<li><img src="./../images/common/TankRole.png" class="imgIcon">The fire tank should move clockwise to soak the DPS's fire with the other tank.</li>
+		<li><img src="./../images/common/HealerRole.png" class="imgIcon">The fire healer should move clockwise to take a tower.</li>
+		<li><img src="./../images/common/DPSRole.png" class="imgIcon">The two fire DPSes should split, with one going clockwise and the other going counterclockwise in order to stretch their tether.</li>
+		<li><img src="./../images/common/DPSRole.png" class="imgIcon">The two wind DPSes should move together clockwise to soak the DPS's fire.</li>
+	</ul>
+	<p>After the last towers are taken, the wind tether will expire and resolve harmlessly.</p>
+	<p>After a time, Hesperos will cast <b>Ultimate Impulse</b>, which is deals heavy raidwide damage. The damage is lethal if thorns or tethers are left unresolved.</p>
+
+	<h2 id="act3">Akanthai: Act 3</h2>
+	<div class="hintbox">
+		<a href="https://ff14.toolboxgaming.space/?id=619341940341461&preview=1" target="_blank"><b>Act 3 Toolbox</b></a>
+	</div>
+	<p>Hesperos will telegraph eight towers (four on the left, four on the right) and a knockback that comes from the center of the field. He will then cover them with <b>Wreath of Thorns</b> and tether
+		to four towers, then to the knockback, then to another four towers.</p>
+	<p>Hesperos will cast <b>Kothornos Kick</b> and jump to the farthest player and do an AOE, inflicting a Magic Vulnerability debuff. Anyone else hit by the AOE will be knocked back into the kill wall,
+		so give them space. After <b>Kothornos Kick</b>, Hesperos will do three conal cleaves that target the closest three players, inflicting a Magic Vulnerability debuff. The kick baiter cannot take
+		a conal cleave, since they already have Magic Vulnerability. As soon as they bait the kick, they should move towards the center to avoid the three cleaves.</p>
+	<p>The kick baiter and the three conal baiters should go towards the towers being resolved second, that way four other players can take the first set of towers without worrying about kicks and conal cleaves.</p>
+	<p>After the first towers and triple conal cleaves go off, the knockback will happen. The first tower group can use their knockback invuln after their tower goes off, while the second tower group can use
+		their knockback invuln after the triple conal cleaves go off.</p>
+	<p>After the knockback, the first tower group should have one player bait another <b>Kothornos Kick</b> to the opposite side of the field (where the first towers resolved). Like before, three other
+		players will bait triple conal cleaves. The second tower group will take their four towers while this is happening.</p>
+	<p>After all eight towers finish going off, there will be a <b>Nearsight</b> or <b>Farsight</b>, followed by <b>Heart Stake</b>. <b>Heart Stake</b> will attack the two players with the highest
+		and second highest aggro and apply a DoT, one at a time. One tank can take it with their invulnerability by having the off tank Provoke after the main tank is hit.</p>
+
+	<h2 id="act4">Akanthai: Act 4</h2>
+	<div class="hintbox">
+		<a href="https://ff14.toolboxgaming.space/?id=049343003341461&preview=1" target="_blank"><b>Act 4 Toolbox</b></a>
+	</div>
+
+
+
+	<p>Here is a video example where supports need to take tethers and DPS need to take virus.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p4sp1/Tethers_and_Virus_Example.mp4" type="video/mp4"/>
+	</video>
+
+
+
+
+
+
+	<div class="hintbox" id="timeline">
+		<b>Timeline</b>
+		<ul>
+			<li>Searing Stream</li>
+			<li><b><a href="#act1">Akanthai: Act 1</a></b></li>
+			<li>Searing Stream</li>
+			<li>Wreath of Thorns</li>
+			<li>Nearsight / Farsight</li>
+			<li><b><a href="#act2">Akanthai: Act 2</a></b></li>
+			<li>Demigod Double</li>
+			<li>Wreath of Thorns</li>
+			<li>Dark Design</li>
+			<li>Ultimate Impulse</li>
+			<li><b><a href="#act3">Akanthai: Act 3</a></b></li>
+			<li>Wreath of Thorns</li>
+			<li>Kothornos Kick</li>
+			<li>Nearsight / Farsight</li>
+			<li>Heart Stake</li>
+			<li><b><a href="#act4">Akanthai: Act 4</a></b></li>
+			<li>Searing Stream</li>
+			<li>Wreath of Thorns</li>
+			<li>Searing Stream</li>
+			<li>Ultimate Impulse</li>
+			<li>Searing Stream</li>
+			<li><b><a href="#finale">Akanthai: Finale</a></b></li>
+			<li>Wreath of Thorns</li>
+			<li>Fleeting Impulse</li>
+			<li>Wreath of Thorns</li>
+			<li>Nearsight / Farsight</li>
+			<li>Searing Stream</li>
+			<li>Demigod Double</li>
+			<li><b><a href="#curtaincall">Akanthai: Curtain Call</a></b></li>
+			<li>Hell's Sting</li>
+			<li>Hell's Sting</li>
+			<li>Ultimate Impulse</li>
+			<li>Hell's Sting</li>
+			<li>Hell's Sting</li>
+			<li>Ultimate Impulse</li>
+			<li>Ultimate Impulse (Enrage)</li>
+		</ul>
+	</div>
+</body>
+
+</html lang="en">

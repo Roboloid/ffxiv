@@ -42,3 +42,10 @@ img {
 	margin: 20px 0px;
 	max-width: 100%;
 }
+
+.imgIcon {
+	height: 1em;
+	margin: 0px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
