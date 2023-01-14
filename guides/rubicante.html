@@ -129,11 +129,21 @@
     
     <h2 id="flamespireclaw">Flamespire Claw</h2>
     <p>After several repeated mechanics, Rubicante will do <b>Flamespire Claw</b>, his last unique mechanic. Limit Cut dots will appear over everyone's heads, which denote the order in which he does
-        large cleaves on players. There are multiple ways to resolve this, but I prefer having odd-numbered players stack in the West safe spot and even-numbered players stack in the East safe spot.
-        Odds will resolve their cleave North, and Evens will resolve their cleave South. At the same time, tethers will attach to random players. These tethers will gradually give the tethered player a stack
-        of Flamespire. Accumulating 5 stacks of Flamespire will result in a wipe. Players need to trade off the tether to avoid any one player accumulating too many Flamespire debuffs while resolving
-        Limit Cut cleaves.</p>
-	<img src="./../images/rubicante/Flamespire_Claw_Limit_Cut.png">
+        large cleaves on players. There are multiple ways to resolve this, but I prefer Hector's strat of having odds resolve NW and evens resolve NE. He will also tether to the two closest players.
+		These tethers will gradually give the tethered player a stack  of Flamespire. Accumulating 5 stacks of Flamespire will result in a wipe. Players need to trade off the tether to avoid any one
+		player accumulating too many Flamespire debuffs while resolving Limit Cut cleaves. The important things to note are: 1 and 2 NW / NE, 7 and 8 close to grab tethers, and players who get cleaved
+		should go south to take the tether.</p>
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_0.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_1.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_2.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_3.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_4.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_5.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_6.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_7.png">
+	<img class="slides" style="width: 500px" src="./../images/rubicante/Flamespire_Claw_Limit_Cut_8.png">
+	<button onclick="plusDivs(-1)">&#10094;</button>
+	<button onclick="plusDivs(+1)">&#10095;</button>
 
     <p>After this, Rubicante will loop mechanics and do another <b>Scalding Ring</b> / <b>Scalding Signal</b>, a <b>Sweeping Immolation</b>, and two more <b>Ordeal of Purgations</b>, then enrage.
         If your DPS is good and you didn't have too many deaths, you can defeat Rubicante around <b>Flamespire Claw</b>. Best of luck!</p>
@@ -176,6 +186,25 @@
 			<li>Inferno (Enrage)</li>
 		</ul>
 	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("slides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		x[slideIndex-1].style.display = "block";
+		}
+	</script>
 </body>
 
 </html lang="en">
