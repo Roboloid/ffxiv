@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="https://roboloid.github.io/ffxiv/favicon.ico">
+	<link rel="stylesheet" href="./../styles.css">
+	<link rel="stylesheet" href="./../navigation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+	<!-- Metadata start -->
+	<html prefix="og: http://ogp.me/ns#"></html>
+	<meta property="og:title" content="Abyssos: The Eighth Circle (Savage)">
+	<meta property="og:description" content="A guide for Abyssos: The Eighth Circle (Savage).">
+	<meta property="og:site_name" content="Roboloid's FFXIV Page" >
+	<meta property="og:image" content="https://roboloid.github.io/ffxiv/images/p8sp2/header.png">
+	<!-- Metadata end -->
+
+	<title>Abyssos: The Eighth Circle (Savage)</title>
+</head>
+
+<body>
+	<script>
+        $(function(){
+            $("#navbar").load("./../navigation.html");
+        });
+    </script>
+
+    <div id="navbar">
+
+    </div>
+
+	<img src="./../images/p8sp2/header.png">
+
+	<h1>Abyssos: The Eighth Circle (Savage) Phase 1</h1>
+
+	<p>Abyssos: The Eighth Circle (Savage) is a high-end duty added in patch 6.21: Buried Memory.
+		The fight can be unlocked by speaking to Nemjiji in Labyrinthos (8.4, 27.4) after completing Abyssos: The Eighth Circle.
+	</p>
+
+	<p>The minimum ilvl required to enter this fight is 610.</p>
+
+	<h2>Hephaistos's Abilities</h2>
+	<ul>
+		<li><b><u>Aioniopyr</u></b>: A heavy raidwide attack that inflicts a DoT.</li>
+		<li><b><u>Tyrant's Unholy Darkness</u></b>: A split AOE tankbuster.</li>
+		<li><b><u>Ashing Blaze</u></b>: Hephaistos ignites one of his wings and cleaves half of the room, East or West.</li>
+	</ul>
+
+	<p>I highly recommend <a href="https://www.youtube.com/watch?v=k9E44ebqTB8" target="_blank"><b>Rinon and Scripe's P8S guide</b></a>, as it explains a lot of mechanics really well.</p>
+
+	<h2 id="na1">Natural Alignment 1</h2>
+	<p>Hephaistos will give either two supports or two DPS the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment debuff, which deals DoT damage and makes it so that any other
+		damage taken will wipe the party. These plays must not be clipped by AOEs or other people's stacks or spreads. He will then cast <b>Twist Nature</b>, which puts a meter over one of the
+		<img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players. The meter shows which of two mechanics will go off first. The first meter will be a stack or spread,
+		and the second meter will be fire or ice (3x 2-person stacks or 2x 3-person stacks).</p>
+	<img style="width: 250px" src="./../images/p8sp2/P8S_Phase_2_NA1_Meter_SpreadStack.png">
+	<img style="width: 250px" src="./../images/p8sp2/P8S_Phase_2_NA1_Meter_FireIce.png">
+
+	<p>Hephaistos will cast <b>Tyrant's Flare</b>, a set of baited AOEs. Players should stack up to bait AOEs and be ready to resolve the stack or spread afterwards.</p>
+	<ul>
+		<li>If it's stack then spread, the party should go South and the purples go North. After that, dodge a half-room <b>Ashing Blaze</b> cleave. Keep the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment
+			players North and have the party spread in the safe half of the field.</li>
+		<li>If it's spread then stack, everyone should go to clock spots. After that, dodge a half-room <b>Ashing Blaze</b> cleave. Have the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment
+			players go North and the party stack South of them, near the center of the arena.</li>
+	</ul>
+
+	<p>Here is an example of stack then spread.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA1_StackFirst.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA1_StackFirstSpreadSecond.png">
+
+	<p>Here is an example of spread then stack.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA1_SpreadFirst.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA1_SpreadFirstStackSecond.png">
+
+	<p>After the stack and spread, a fire and ice meter will appear over the other <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment player's head. The fire attack is three sets of
+		2-person stacks, and the ice attack is 2 sets of 3-person stacks. Adds wil spawn and blast several rows, and only one of the top two rows of the field will be safe, and the safe row will alternate between fire /
+		ice attacks (either it will be top row safe then second from the top safe, or vice versa). Have the two <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players stack
+		on each other in the middle of the field. The supports should be West and the DPS should be East. You will need two players to flex depending on which role has
+		<img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players. If supports have the debuff, then melees should flex. If the DPS have the debuff, then tanks should flex.
+		Healers will always be West and ranged DPS will always be East no matter what.</p>
+	<p>Let's assume the fire attack happens first. Unlike stack into spread, it doesn't change much which goes first for fire or ice. The fire attack is three sets of 2-person stacks. The
+		<img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players will always be near the center between the top two rows. The supports are West, the DPS are right, and the tank
+		/ melee flexers should be mid but on the other side of the row away from the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players. For each pair, one player should be
+		far (near the edge of a square) and one player should be close (on the triangle near the edge). Fire is baited on the three farthest players. It's important that the non-baiter in your pair is on the triangle,
+		as being too far will bait two stacks in your pair and guarantee death.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA1_Fire_Footwork.png">
+	<p>For the tank / melee flexers, the fire baiter can be offset at an angle to ensure that they are the among the three farthest players,
+		as the distance is relative to the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment player in the center, and tank / melee flexers can't leave their box due to the AOEs /
+		kill plane.</p>
+	<p>Here is an example where supports have <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment and melees flex.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_NA1_Fire.png">
+
+	<p>Now let's move onto ice. After the first attack, the safe row will alternate between the top two rows. If it was the top row, then now it will be the second from the top row. The two sets of 3-person stacks
+		will be baited on the two closest players. Those players should stand in the triangle while the other two in the stack stand near the edge of the square. The two tank / melee flexers should always be baiting
+		ice.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_NA1_Ice.png">
+
+	<p>Here is a video example where the DPS get <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment from the POV of a <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon">
+		Natural Alignment player.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp2/P8S_Phase_2_NA1_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<p>After this, he will do an <b>Aioniopyr</b> raidwide, a <b>Tyrant's Unholy Darkness</b> tankbuster, then begin his next mechanic.</p>
+
+	<h2 id="hc1">High Concept 1</h2>
+	<p>Here are the main debuffs for <b>High Concept 1</b>. It is a puzzle-heavy mechanic, but take it one step at a time and you'll do fine! The debuffs are assigned at random, meaning anyone can get any debuff.</p>
+	<ul>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon"> Imperfection: Alpha, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon"> Imperfection: Beta, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Gamma.png" class="imgIcon"> Imperfection: Gamma, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>One player will have <img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> Multisplice, a short debuff (8s) that requires two people to stack.</li>
+		<li>One player will have <img src="./../images/p8sp2/Supersplice.png" class="imgIcon"> Supersplice, a short debuff (8s) that requires three people to stack.</li>
+		<li>When an Alpha / Beta / Gamma debuff expires, it will detonate a large AOE. Have them resolve at the A / B / C markers in order to leave the NW corner of the field safe.</li>
+	</ul>
+	
+	<p>Hephaistos will cast <b>High Concept</b>, which deals heavy raidwide damage. After that, he will become untargetable and assign the above debuffs.</p>
+
+	<ul>
+		<li>The short Alpha / Beta / Gamma players should go to A / B / C markers in the corners of the field.</li>
+		<li>The <img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> Multisplice player should stack with the long <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon"> Imperfection: Alpha
+			player to resolve their 2-person stack.</li>
+		<li>The <img src="./../images/p8sp2/Supersplice.png" class="imgIcon"> Supersplice player should stack with the long <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon"> Imperfection: Beta
+			and long <img src="./../images/p8sp2/Imperfection：_Gamma.png" class="imgIcon"> Imperfection: Gamma players to resolve their 3-person stack.</li>
+	</ul>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_HC1_0.png">
+
+	<p>After the short ABG and two-person and three-person stacks go off, Hephaistos will cast <b>Arcane Control</b> and spawn two towers. The towers will either be water, lightning, or wind. The ABG players will now
+		have elements over their head. Mixing with other ABG players will cause them to create concepts. Rather than tell you the combination of every ABG, I recommend using your eyes. If you have the element
+		that matches the tower, go to the center and stack on another element player for a few seconds to mix. If you don't have the right element, just be in range for heals but don't interrupt mixing.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_HC1_1.png">
+
+	<p>Tower priority is Alpha always North, Gamma always South, and Beta adjust based on who they're with. An <b>Ashing Blaze</b> half-room cleave goes off at the same time, so be mindful of that and pre-position to where you have to go.
+		The long Alpha / Beta / Gamma players will take the A / B / C markers. The players who just resolved towers will go NW and be done for the rest of the mechanic. The unused short ABG will go back to the marker
+		they started at. The <img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> player and <img src="./../images/p8sp2/Supersplice.png" class="imgIcon"> player will go to the remaining markers. The
+		<img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> player will go to either A or B, and the <img src="./../images/p8sp2/Supersplice.png" class="imgIcon"> stack player will go to B or C, depending
+		on where the unused ABG player is. In the bottom example, the short Beta player was unused, meaning the <img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> player goes to A, and the
+		<img src="./../images/p8sp2/Supersplice.png" class="imgIcon"> player will go to C.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC1_2.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC1_3.png">
+
+	<p>After this, Hephaistos will cast <b>Arcane Control</b> again and spawn four towers. Two people from two markers will need to mix in order to cover four towers. Short debuffs go between the top two towers
+		(unused short ABG, <img src="./../images/p8sp2/Multisplice.png" class="imgIcon">, and <img src="./../images/p8sp2/Supersplice.png" class="imgIcon">), and long debuffs go between the bottom two towers
+		(long <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon">, <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon">,
+		<img src="./../images/p8sp2/Imperfection：_Gamma.png"class="imgIcon">). An <b>Ashing Blaze</b> half-room cleave will happen again, so be on the safe side.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC1_4.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC1_5.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC1_6.png">
+
+	<p>Here is a video example of the mechanic from the 2-person stack's perspective.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp2/P8S_Phase_2_HC1_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<p>When the towers are resolved, Hephaistos will cast <b>Deconceptualize</b> and remove all element debuffs. He'll do an <b>Aioniopyr</b> and begin <b>Limitless Desolation</b>.</p>
+
+	<h2 id="ld">Limitless Desolation</h2>
+	<p>Have supports spread West and DPS spread East. The order from North to South is the same as the Centaur2 tetraflare spreads from Phase 1 (T1 / M1, T2 / M2, H1 / R1, H2 / R2).</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_LD_Spread.png">
+
+	<p>Four sets of two spread AOEs will hit one support and one DPS at a time. Two towers will spawn at the same time, one on each side of the field. Players must take the towers in the order of when they were hit
+		and when the tower spawned. Count to four and keep your eyes on the field to see where the tower spawns when you're hit. Supports will handle West towers and DPS will handle East towers, so just worry about
+		your role's side. A large AOE will be baited on players right before they are supposed to take their tower. Standing on the intersection between squares is a safe way to bait your AOE without it covering
+		your tower. As soon as the AOE is baited, walk into your tower.</p>
+
+	<p>Here is a video example of the mechanic from melee1's POV.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp2/P8S_Phase_2_LD_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<h2 id="na2">Natural Alignment 2</h2>
+	<p><b>Natural Alignment 2</b> is like <b>Natural Alignment 1</b> but with a few changes.</p>
+	<ul>
+		<li>For the stack or spread, one of the top two rows will be safe and alternate, instead of having the entire field and then half of the field.</li>
+		<li>Either one or both of the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players will also have the <img src="./../images/p8sp2/Inverse_Magicks.png" class="imgIcon">
+			Inverse Magicks debuff, which will resolve the meter in the opposite order of what is telegraphed (that is, if the fire gauge fills faster than the ice gauge, it will resolve ice first and then
+			fire if <img src="./../images/p8sp2/Inverse_Magicks.png" class="imgIcon"> Inverse Magicks is active). It is important to note who has <img src="./../images/p8sp2/Inverse_Magicks.png" class="imgIcon">
+			Inverse Magicks and whether or not their meter is the one currently going off. If you have <img src="./../images/p8sp2/Inverse_Magicks.png" class="imgIcon"> Inverse Magicks, it helps to jump up and down
+			when your meter appears just so people know you have the reversal without checking the party list.</li>
+	</ul>
+
+	<p>For spreads, I prefer static NA2. Everyone has THMR spots with Group 1 in the top side and Group 2 in the bottom side. People go to their static spots regardless of whether or not their have
+		<img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_NA2_Spread.png">
+
+	<p>For stacks, have the <img src="./../images/p8sp2/Natural_Alignment.png" class="imgIcon"> Natural Alignment players go East or West, wherever their role normally is, and have the rest of the party stack the
+		other way.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_NA2_Stack.png">
+
+	<p>Fire and ice is resolved the same way as <b>Natural Alignment 1</b>, just be mindful of the possible reversal. Since I showed <b>Natural Alignment 1</b> with the melee flex, here is what it looks like with
+		the tank flex.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA2_Fire.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_NA2_Ice.png">
+
+	<p>Hephaistos will do an <b>Ashing Blaze</b>, then a raidwide and a tankbuster. Then he'll begin his second round of <b>High Concept</b>.</p>
+
+	<h2 id="hc2">High Concept 2</h2>
+	<p>There is a slightly different set of debuffs for <b>High Concept 2</b>.</p>
+	<ul>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon"> Imperfection: Alpha, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon"> Imperfection: Beta, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>Two players will have <img src="./../images/p8sp2/Imperfection：_Gamma.png" class="imgIcon"> Imperfection: Gamma, with one being a short debuff (8s) and one being a long debuff (26s).</li>
+		<li>Two players will have no debuffs.</li>
+		<li>One of the long <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon">, <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon">, or
+			<img src="./../images/p8sp2/Imperfection：_Gamma.png"class="imgIcon"> players will also have the <img src="./../images/p8sp2/Solosplice.png" class="imgIcon"> Solosplice debuff, which means
+			they cannot stack with anyone.</li>
+		<li>One of the long <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon">, <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon">, or
+			<img src="./../images/p8sp2/Imperfection：_Gamma.png"class="imgIcon"> players will also have the <img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> Multisplice debuff, which means
+			they must stack with one other person.</li>
+	</ul>
+
+	<p>The short <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon">, <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon">, and
+		<img src="./../images/p8sp2/Imperfection：_Gamma.png"class="imgIcon"> players will go to the A / B / C markers like before. The two players with no debuff should be close to short
+		<img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon">, as they want to mix later on. The long ABG with the
+		<img src="./../images/p8sp2/Solosplice.png" class="imgIcon"> debuff should go to the 1 marker to not be near anyone. The long ABG with the
+		<img src="./../images/p8sp2/Multisplice.png" class="imgIcon"> and the long ABG with no second debuff should stack together on the 2
+		marker.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_HC2_0.png">
+
+	<p>Have the short ABG players mix depending on the tower. The two players who had no debuff must mix their <img src="./../images/p8sp2/Perfection：_Alpha.png" class="imgIcon"> in order to create
+		two <img src="./../images/p8sp2/Fiery_Conception.png" class="imgIcon"> Ifrits. Don't forget to dodge the cleave.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC2_1.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC2_2.png">
+
+	<p>Have the unused short ABG, the two players who just resolved towers, and the Ifrits all go NW. The long ABG players will go to A / B / C markers.</p>
+	<img style="width: 500px" src="./../images/p8sp2/P8S_Phase_2_HC2_3.png">
+
+	<p>Four towers will appear. <img src="./../images/p8sp2/Imperfection：_Alpha.png" class="imgIcon"> and <img src="./../images/p8sp2/Imperfection：_Beta.png" class="imgIcon"> can always mix, and
+		<img src="./../images/p8sp2/Imperfection：_Gamma.png" class="imgIcon"> and the unused short ABG can always mix to resolve this mechanic. Have them mix and take towers.</p>
+	<p>Four adds will also spawn on cardinals. These will tether
+		to the closest player, follow them, and do a line AOE after a few seconds. The two Ifrit players and the two players who resolved towers should bait these adds. Have players who took the previous set of
+		towers take the North and South towers. The add they take should be the same one as the tower they took (North or South). The two Ifrit players will take the East and West add. They can pre-position
+		in the NW corner before this part of the mechanic begins, or call it out in chat whether they are taking East or West. After the players are tethered to the adds, they should move clockwise and one square
+		forward to bait the laser away from the center where the tower players are resolving. They move forward one square in order to avoid other baiters' lasers.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC2_4.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_HC2_5.png">
+
+	<p>After this, Hephaistos will begin casting <b>Ego Death</b>, a lethal raidwide that guarantees death.
+		The four Ifrit and wind players need to mix with each other in order to create <img src="./../images/p8sp2/Immortal_Spark.png" class="imgIcon"> Immortal Spark. Having four
+		<img src="./../images/p8sp2/Immortal_Spark.png" class="imgIcon"> Immortal Sparks on the field will grant everyone <img src="./../images/p8sp2/Immortal_Conception.png" class="imgIcon">
+		Immortal Conception, allowing the party to survive <b>Ego Death</b>. Players will need to be healed up to 100% before the Phoenix is made. Not being topped off will kill you, and you won't get the Phoenix buff
+		later, guaranteeing enrage due to low DPS.</p>
+
+	<p>Here is a video example of the mechanic with short Alpha and North tower.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp2/P8S_Phase_2_HC2_Example_1.mp4" type="video/mp4"/>
+	</video>
+		
+	<p>After a brief cutscene, you'll be in the final phase.</p>
+
+	<h2 id="dom">Dominion</h2>
+	<p>The power of the Phoenix revives the party and gives everyone the <img src="./../images/p8sp2/Everburn.png" class="imgIcon"> Everburn buff, massively increasing damage dealt.
+		Hephaistos will begin the final phase with <b>Aionagonia</b>, which deals raidwide damage and inflicts a DoT. He will then begin casting <b>Dominion</b>, a heavy raidwide that also does four spread AOEs, two
+		supports and two DPS. These spreads inflict <img src="./../images/common/Earth_Resistance_Down_II.png" class="imgIcon"> Earth Resistance Down. He will spawn two sets of four towers that start at the center
+		of the field and pop out near the edges. When they pop out, they must be soaked by one player or else everyone will receive a <img src="./../images/common/Damage_Down.png" class="imgIcon"> Damage Down,
+		ensuring that you won't have enough DPS to clear.</p>
+	
+	<p>My preferred strategy is THMR towers with designated flexes within each role type. Tanks take the left tower, healers take the second from the left, melees take the second from the right, and ranged
+		DPS take the right tower. Do note that there will not always be two towers on the West side and two towers on the East side. It is possible for one side to have three towers, which is why it is important
+		to keep your eyes peeled. Wait near the center to see where the towers are going, then follow it.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Basic_0.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Basic_1.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Basic_2.png">
+
+	<p>It's possible for the same role type to get hit by the spreads. For example, both healers or both melees could get the first batch of <img src="./../images/common/Earth_Resistance_Down_II.png" class="imgIcon">
+		Earth Resistance Down. We need flexes within each role type to handle this. Assign one person per role type to be a flexer (one tank, one healer, one melee, and one ranged DPS). In the above example, the tank
+		who is flexing would take the other support tower, the healer's. The flexing ranged DPS would take the other DPS tower, the melee tower. When the healers and melees take their turn, their respective flexers shoud grab the
+		tank tower and the ranged DPS tower.</p>
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Advanced_0.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Advanced_1.png">
+	<img style="width: 333px" src="./../images/p8sp2/P8S_Phase_2_Dom_Advanced_2.png">
+
+	<p>Here is a video example where both melees get the debuff and the Bard and Ninja flex.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp2/P8S_Phase_2_Dominion_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<p>Hephaistos will do <b>Dominion</b> twice, then do a long-casted <b>Ego Death</b> serving as enrage.</p>
+
+	<div class="hintbox" id="timeline">
+		<b>Timeline</b>
+		<ul>
+			<li>Aioniopyr</li>
+			<li>Tyrant's Unholy Darkness</li>
+			<li><b><a href="#na1">Natural Alignment 1</a></b></li>
+			<li>Twist Nature</li>
+			<li>Tyrant's Flare</li>
+			<li>Ashing Blaze</li>
+			<li>Aioniopyr</li>
+			<li>Tyrant's Unholy Darkness</li>
+			<li><b><a href="#hc1">High Concept 1</a></b></li>
+			<li>Arcane Control</li>
+			<li>Ashing Blaze</li>
+			<li>Arcane Control</li>
+			<li>Ashing Blaze</li>
+			<li>Deconceptualize</li>
+			<li>Aioniopyr</li>
+			<li><b><a href="#ld">Limitless Desolation</a></b></li>
+			<li>Aioniopyr</li>
+			<li>Tyrant's Unholy Darkness</li>
+			<li><b><a href="#na2">Natural Alignment 2</a></b></li>
+			<li>Inverse Magicks</li>
+			<li>Twist Nature</li>
+			<li>Ashing Blaze</li>
+			<li>Aioniopyr</li>
+			<li>Tyrant's Unholy Darkness</li>
+			<li><b><a href="#hc2">High Concept 2</a></b></li>
+			<li>Arcane Control</li>
+			<li>Ashing Blaze</li>
+			<li>Arcane Control</li>
+			<li>Ego Death</li>
+			<li>Aionagonia</li>
+			<li><b><a href="#dom">Dominion</a></b></li>
+			<li>Aionagonia</li>
+			<li><b><a href="#dom">Dominion</a></b></li>
+			<li>Aionagonia</li>
+			<li>Ego Death (Enrage)</li>
+		</ul>
+	</div>
+</body>
+
+</html lang="en">
