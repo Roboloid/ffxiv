@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="https://roboloid.github.io/ffxiv/favicon.ico">
+	<link rel="stylesheet" href="./../styles.css">
+	<link rel="stylesheet" href="./../navigation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+	<!-- Metadata start -->
+	<html prefix="og: http://ogp.me/ns#"></html>
+	<meta property="og:title" content="Anabaseios: The Eleventh Circle (Savage)">
+	<meta property="og:description" content="A guide for Anabaseios: The Eleventh Circle (Savage).">
+	<meta property="og:site_name" content="Roboloid's FFXIV Page" >
+	<meta property="og:image" content="https://roboloid.github.io/ffxiv/images/p8sp1/header.png">
+	<!-- Metadata end -->
+
+	<title>Anabaseios: The Eleventh Circle (Savage)</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W11X59C8T4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W11X59C8T4');
+</script>
+
+<body>
+	<script>
+        $(function(){
+            $("#navbar").load("./../navigation.html");
+        });
+    </script>
+
+    <div id="navbar">
+
+    </div>
+
+	<img src="./../images/p11s/header.png">
+
+	<h1>Anabaseios: The Eleventh Circle (Savage) Phase 1</h1>
+
+	<p>Anabaseios: The Eleventh Circle (Savage) is a high-end duty added in patch 6.41: The Dark Throne.
+		The fight can be unlocked by speaking to Nemjiji in Labyrinthos (8.4, 27.4) after completing Anabaseios: The Twelfth Circle.
+	</p>
+
+	<p>The minimum ilvl required to enter this fight is 640.</p>
+
+	<h2>Themis's Abilities</h2>
+	<ul>
+		<li><b><u>Eunomia</u></b>: A heavy raidwide attack that inflicts a 10s DoT.</li>
+		<li><b><u>Styx</u></b>: A multi-hitting full party stack.</li>
+		<li><b><u>Dike</u></b>: A double tankbuster that hits twice and inflicts a Light Vulnerability Up debuff on the main threat and a Dark Vulnerability Up debuff on the second threat. Requires a swap.</li>
+		<li><b><u>Jury Overruling</u></b>: 8 line AOEs that target all players.</li>
+		<ul>
+			<li>Light effect: Plants a small, delayed AOE at the point where players were hit by a line AOE. Follows up with 2 light party stacks.</li>
+			<li>Dark effect: Plants a delayed donut at the point where players were hit by a line AOE. Follows up with 4 pair stacks.</li>
+		</ul>
+		<li><b><u>Upheld Overruling</u></b>: Tethers a line to one player.</li>
+		<ul>
+			<li>Light effect: Jumps to the tethered player and does a full party stack. Follows up with a point-black AOE that is bigger than the boss's hitbox and 2 light party stacks.</li>
+			<li>Dark effect: Jumps to the tethered player and does a lethal knockback to all other players caught by it, which is larger than the boss's hitbox.
+				Follows up with a donut that goes into the boss's hitbox rings and 4 pair stacks.</li>
+		</ul>
+		<li><b><u>Divisive Overruling</u></b>: A huge line AOE that runs in front of and behind the boss's hitbox in the direction he is facing. It is not bigger than the boss's hitbox.</li>
+		<ul>
+			<li>Light effect: The line AOE gets bigger (but not bigger than max melee). Follows up with 2 light party stacks.</li>
+			<li>Dark effect: A donut line AOE that hits the sides and leaves the area that was first cleaved safe. Follows up with 4 pair stacks.</li>
+		</ul>
+		<li><b><u>Arcane Revelation</u></b>: Spawns several portals after the cast finishes. The telegraphed element will fire its portals and do line AOEs in front of the portal.
+			There will always be 2 safe spots on the opposite sides of the field (NW and SE, or NE and SW).</li>
+		<li><b><u>Dismissal Overruling</u></b>: A knockback attack that can be ignored with knockback invuln.</li>
+		<ul>
+			<li>Light effect: Follows up with a point-black AOE that is bigger than the boss's hitbox and 2 light party stacks.</li>
+			<li>Dark effect: Follows up with a donut that goes into the boss's hitbox rings and 4 pair stacks.</li>
+		</ul>
+		<li><b><u>Shadowed Messengers</u></b>: Spawns two clones on adjacent intercardinals. Each clone will cast <b><u>Divisive Overruling</u></b>, one with light and one with dark.</li>
+		<li><b><u>Upheld Ruling</u></b>: Tethers a line to one player.</li>
+		<ul>
+			<li>Light effect: Jumps to the tethered player and does a full party stack. Follows up with a point-black AOE that is bigger than the boss's hitbox.</li>
+			<li>Dark effect: Jumps to the tethered player and does a lethal knockback to all other players caught by it, which is larger than the boss's hitbox.
+				Follows up with a donut that goes into the boss's hitbox rings.</li>
+		</ul>
+
+
+		<li><b><u>Sunforge</u></b>: Hephaistos will summon either a phoenix (hits the side columns) or a serpent (hits the center column) that blow up the 3x3 grid on the ground.
+			This attack is casted on the black lines / boxes.</li>
+		<li><b><u>Tetraflare</u></b>: Four sets of stack AOEs that target either all the supports or all the DPS. Support + DPS pairs should stack up to soak these.
+			The size of the AOE is small, so try to be on top of each other.</li>
+		<li><b><u>Octaflare</u></b>: Eight sets of spread AOEs that target everyone. Spread out to ensure people don't overlap.</li>
+		<li><b><u>Conceptual Tetraflare</u></b> / <b><u>Conceptual Octaflare</u></b>: This <b>Tetraflare</b> or <b>Octaflare</b> attack is delayed and stored for later.
+			When the next mechanic after this cast resolves, Hephaistos will always follow up with a <b>Sunforge</b>, and the <b>Conceptual Tetraflare</b> or <b>Conceptual Octaflare</b> will go off at the same time.</li>
+		<li><b><u>Flameviper</u></b>: A tankbuster that hits twice. Each hit inflicts a Magic Vulnerability debuff and a DoT. During the cast, the OT should provoke and take aggro.
+			As soon as the OT takes the second hit, the MT should provoke back, otherwise the OT will die due to the vuln. 
+			One tank cannot use their invulnerability on this to take both, as the DoT will be boosted by the vuln and do lethal damage as soon as the invulnerability wears off.</li>
+		<li><b><u>Reforged Reflection</u></b>: Hephaistos will shapeshift into either his snake form or his centaur form. He will do an attack as soon as the shapeshift animation finishes.
+			If he turns into a snake, then he will do lethal damage to anyone standing in his hitbox. If he turns into a centaur, then he will do a heavy knockback.
+			You have about 4 seconds to react to this, so be ready to move outside of his hitbox (snake) or pop a knockback invuln (centaur).
+			For centaur, you can also move to the center of his hitbox and eat the knockback if you mistimed your knockback invuln.</li>
+	</ul>
+
+	<h4>Conceptual Tetraflare / Conceptual Octaflare</h4>
+	<p>Hephaistos will do a random <b>Conceptual Tetraflare</b> or <b>Conceptual Octaflare</b>. This will go off after the upcoming <b>Volcanic Torches</b>.</p>
+
+	<h4>Volcanic Torches</h4>
+	<p>Everyone should go to their intercard quadrant. There are 3 possible safe spots in your corner of 4 squares (the far corner is never safe).
+		The safe spot will be determined by which way the flames turn as soon as they hit the first wall. Depending on your pattern, you can pre-position for the next mechanic, <b>Sunforge</b>.</p>
+	<img style="width: 500px" src="./../images/p8sp1/P8S_Phase_1_First_Volcanic_Torches_Hector.png">
+	<img style="width: 750px" src="./../images/p8sp1/P8S_Phase_1_First_Volcanic_Torches.png">
+
+	<h4>Sunforge</h4>
+		<p>This follows up 2 seconds after the previous <b>Volcanic Torches</b>, so you'll need to be fast.
+			Depending on your <b>Volcanic Torches</b> pattern, you may need to run from your safe white square spot to your safe black square spot.
+			The <b>Conceptual Tetraflare</b> / <b>Conceptual Octaflare</b> also resolves at the same time, so be ready to stack or spread while respecting the <b>Sunforge</b> column AOEs.
+			If it's a <b>Conceptual Tetraflare</b>, ranged players should stack on the tanks / melees.
+			The image shown is phoenix + <b>Conceptual Octaflare</b>.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_First_Sunforge_Hector.png">
+
+	<p>Here is a video example of the mechanic from ranged2's POV with <b>Conceptual Tetraflare</b> and the serpent for <b>Sunforge</b>.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp1/P8S_Phase_1_Volcanic1_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<h2 id="centaur1">Reforged Reflection (Centaur 1)</h2>
+	<p>The order of whether snake goes first or centaur goes first is random. This guide will assume that centaur goes first.
+		Thus, the timeline for major mechanics is <b>Centaur1</b> → <b>Manifold Flames</b> → <b>Snake1</b> → <b>Fourfold Flames</b> → <b>Centaur2</b> → <b>Snake2</b> → Enrage.</p>
+
+	<h4>Rearing Rampage</h4>
+	<p>This is 4 sets of 2 AOEs each. Each AOE inflicts a vuln. Spread out to your clock spots to ensure you don't get clip other people.
+		Remember which AOE you got (1st, 2nd, 3rd, or 4th), as that will be the same order you bait AOEs in a moment.</p>
+
+	<h4>Stomp Dead</h4>
+	<p>Hephaistos will do four sets of jumps, each one being a 2-person stack with a big AOE. The players who got the 1st AOE should position NE. The players who got hit 2nd should be center.
+		The 3rd and 4th pair should be on the safe spot East, but ready to move as soon as their other pairs get hit. After the 1st AOE pair gets stomped, the 3rd pair should swap with them.
+		Similarly, after the 2nd AOE pair gets stomped, the 4th AOE pair should swap with them. Refer to the image below (there won't be dots over your head, that's just for guide stuffs).</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Centaur1_Hector.png">
+
+	<h4>Illusory Creation + Creation on Command</h4>
+	<p>Hephaistos will spawn 4 clones of himself, 1 on each cardinal. 2 clones (always adjacent to each other) will create a phoenix and a serpent.
+		The party should position themselves in the row or column directly in front of the phoenix (but not the center square), as these will be the safe spots.
+		In the image below, notice how we line up based on our intercard partners (with melees close and ranged far).</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_CoC_Hector.png">
+
+	<h2 id="manifold">Manifold Flames</h2>
+	<p>Either all 4 supports or all 4 DPS will be hit by an AOE that inflicts vuln. The people that weren't hit should go inside Hephaistos's hitbox on the intercards to bait a proximity line AOE
+		(the intercard you take is the same as your regular intercard, so M1 or H1 would take SW). If you were hit by the vuln AOE, be on any cardinal to avoid the baiters' line AOEs.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Manifold_Hector.png">
+
+	<h4>Tetraflare or Nest of Flamevipers</h4>
+	<p>2 adjacent Hephaistos clones will create the same animal (either double phoenix or double serpent). If it's double phoenix, the center square is safe. If it's double serpent, your intercard corner is safe.
+		If it's <b>Tetraflare</b>, stack on your intercard (either in the central square or on your intercard corner). If it's <b>Nest of Flamevipers</b>, everyone will get a line AOE.
+		If it's a double phoenix + <b>Nest of Flamevipers</b>, then spread out in your clock spots in the central sqaure. If it's double serpent + <b>Nest of Flamevipers</b>, spread out in your
+		intercard corner and be away from your support / DPS partner. The line AOEs come from Hephaistos, so you should put some "left / right" distance between you and your partner.
+		If you're lined up forward / back, then you'll be eating both line AOEs!</p>
+
+	<h4>Volcanic Torches</h4>
+	<p>Only 1 of the 4 far corners will be safe. The strategy is to look at the SW corner and see where the flames go when they hit the wall (think of the first Volcanic Torches).
+		If they both branch away, SW is safe. If they both branch towards, NE is safe. If they both go clockwise, then SE is safe. If they both go counterclockwise, then NW is safe.</p>
+
+	<h2 id="snake1">Reforged Reflection (Snake 1)</h2>
+	<p>For this mechanic, you only need to pay attention to yourself and the ranged / melee player in your light party.
+		That is, melee1 and ranged1 should focus target each other, and tank1 and healer1 should do the same. Tanks and melees may flex for certain mechanics.</p>
+
+	<h4>Gorgomanteia</h4>
+	<p>Look at the debuff list below. The 1 dot or 2 dot just tells you if you'll be resolving the first set of snakes or the second set. The red conal debuff means that you'll do a conal petrification
+		when the timer expires. The green snake debuff will drop a big AOE on you. In Savage, you can't damage the snakes. You need to petrify them with the conal debuff, then melt them with the snake debuff
+		after they've been petrified. Remember to move close to the snake you're going to gaze at, as gazing from the center of the arena could clip other people. Of course, people with the AOE debuff should
+		also stand close to their snake to blow it up (after your conal partner looks at them).</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Snake1_Gorgo_Hector.png">
+
+	<h4>Into the Shadows</h4>
+	<p>Because the 4 snakes will spawn on either all cardinals or all intercardinals, and which cardinal / intercardinal they spawn on is random (e.g., 2 snakes could spawn on North and West at the same time),
+		we need to use the following priority system. Group 1 takes the first snake that spawns NW or counterclockwise of it. Group 2 takes the first snake that spawns N or clockwise of it. So, going off of the
+		image, if the first set of snakes spawned North and West, then the Group 1 supports should take West, and the Group 2 supports should take North. Then shortly after, the Group 1 DPSes takes South, and the
+		Group 2 DPSes takes East.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Snake1_Shadows_Hector.png">
+
+	<p>Remember that like in Normal, the snakes will petrify when they pop out of the ground. The uptime strat is to stand inside the boss's hitbox and close to the boss's center,
+	then look at the safe spot. If snakes are about to jump out East and West, then stand North or South of the boss and just keep facing the boss. Your attacks will always make you look South or North,
+	and you'll dodge the snake petrification without having to look away. In the below image, the snakes jump out at NW and SE. The party positioned SW of the boss in order to face NE, where there is no snake.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Snake1_Gaze_Spot.png">
+
+	<p>One last thing to note: there is a chance that a melee / ranged pair has the same debuff. In the picture below, both M1 and R1 have the conal debuff. That means they'll both end up gazing at the
+	same snake, and the Group 2 DPSes won't have their snake stunned. To work around this, we have tanks and melees flex. So in this scenario, melee1 should go to where Group 2 would resolve, and melee2 should
+	go to where Group 1 would resolve. If the DPS's snakes popped out East and West, then melee1 would go East and melee2 would go West. The same could happen to supports, in which case tank1 and tank2 would swap.
+	Ranged DPS and healers never flex and stick to their group's logic.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Snake1_Gorgo_Debuffs_Hector.png">
+	
+	<p>One helpful tidbit: if the snakes spawn and rotate clockwise around the field before jumping out, then they (and all snakes for the mechanic) will pop out on cardinals. If they rotate
+	counterclockwise, then they all appear on intercardinals.</p>
+	
+	<p>This is a lengthy section, but to sum it up: debuffs go out, the first set of snakes spawn and jump out (don't look at them), then the first set of either all supports or all DPS resolve,
+	then the second snakes spawn and jump out, then the second set of either all supports or all DPS resolve.</p>
+
+	<h4>Conceptual Tetraflare / Conceptual Octaflare</h4>
+	<p>This will detonate after the upcoming <b>Cthonic Vent</b>.</p>
+
+	<h2 id="fourfold">Fourfold Fires</h2>
+	<p>Proximity AOEs will go out from the corners of the field. Stack up in the center to minimize damage. This attacks spawns 4 vents, 1 at each corner of the arena.</p>
+
+	<h4>Cthonic Vent</h4>
+	<p>3 sets of 2 vents exploding will happen, just like in Normal mode. Unlike Normal, he will not be tethered to the 2 vents that detonate. You need to see which one has a pillar of fire bubbling
+		from it to find out if it's unsafe. In the 1st and 3rd set of explosions, it doesn't matter which safe spot you stand in. It only matters during the 2nd set because of stacks or spreads going
+		out around the same time.</p>
+	<p>During the 2nd set of exploding vents, he will also cast a <b>Tetraflare</b> or an <b>Octaflare</b>. If 2 corners are safe, Group 1 takes the West corner and Group 2 takes the East corner. For example,
+		if the safe corners are NW and SE, Group 1 goes NW and Group 2 goes SE. If the safe sides are adjacent, such as NW and NE (all of North), we use boss relative safe spots.</p>
+	<p>Refer to the images below for the safe spots. If it's safe corners and <b>Octaflare</b>, then facing the center, it's melee DPS close, tanks left, ranged DPS right, healers in the back. If it's
+		<b>Tetraflare</b>, just have the tank stack on the melee DPS and the healer stack on the ranged DPS.</p>
+	<p>If it's an entire safe side like in the second image, use those static spots for <b>Octaflare</b>. For
+		<b>Tetraflare</b>, have supports stack on DPS in pairs.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Fourfold_Hector.png">
+
+	<h4>Sunforge</h4>
+	<p>After Cthonic Vent, Hephaistos will do a <b>Sunforge</b>. The <b>Conceptual Tetraflare</b> / <b>Conceptual Octaflare</b> from earlier will go off.</p>
+
+	<h2 id="centaur2">Reforged Reflection (Centaur 2)</h2>
+	<p>The order of Centaur2 first vs Snake2 first is the same order as the Centaur1 / Snake1. Since this guide assumes Centaur1 happens before Snake1, Centaur2 will also happen before Snake2.</p>
+
+	<h4>Quadrupedal Impact / Quadrupedal Crush</h4>
+	<p>Hephaistos will face a random cardinal then cast 1 of these 2 attacks. Quadrupedal Impact is a knockback AOE, so you should go to the wall he's facing to ride the knockback.
+		Quadrupedal Crush is a big AOE. Be in the row of squares on the opposite side of where he's facing. Being max melee on his butt is safe!</p>
+
+	<h4>Conceptual Diflare / Conceptual Tetraflare</h4>
+	<p>After he jumps, Hephaistos will use 1 of these 2 attacks. This goes off as soon as he finishes casting his next attack, <b>Blazing Footfalls</b>, so be ready to resolve it. <b>Conceptual Diflare</b> is a
+		light party stack that is centered on the healers. Group 1 should be closer to the boss and Group 2 should be away from the boss. <b>Conceptual Tetraflare</b> is the set of 4 stack AOEs that you're used
+		to by now. This time, have the pairs be melee / ranged based so people can get uptime. From closest to furthest from the boss, the pairs are: T1/M1, T2/M2, H1/R1, H2/R2. The picture below shows the
+		<b>Conceptual Tetraflare</b> pair stacks.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Centaur2_Tetraflare_Hector.png">
+
+	<h4>Blazing Footfalls</h4>
+	<p>This is a long cast (12 seconds!) that telegraphs a series of quick attacks in succession.</p>
+	<p>First, he'll dash through the center and do a light knockback. Unlike Normal mode, the center black squares are lethal, so you need to stand just barely outside of them.</p>
+	<p>Second, he does <b>Quadrupedal Impact</b> or <b>Quadrupedal Crush</b>. He always jumps to an adjacent cardinal. So if he started North, he'll do his dash to the South, then do his
+		<b>Quadrupedal Impact</b> / <b>Quadrupedal Crush</b> on either East or West.</p>
+	<p>Thirdly, he'll dash through the center again, with another light knockback. If we go off of the earlier assumptions, that means he will dash from East to West or West to East.
+		Make sure you're not in those center 3 black squares.</p>
+	<p>Fourthly and finally, he'll do whichever <b>Quadrupedal Impact</b> / <b>Quadrupedal Crush</b> he did not do for his second attack. Before this resolves, he'll begin a <b>Volcanic Torches</b> attack,
+		which resolves shortly after this <b>Quadrupedal Impact</b> / <b>Quadrupedal Crush</b> goes out. One entire column will be safe, and you will know which column is safe before
+		<b>Quadrupedal Impact</b> / <b>Quadrupedal Crush</b> hits. If it is <b>Quadrupedal Impact</b>, you will need to ensure that you are knocked back towards the safe column, otherwise you'll
+		be thrown knee-deep in Volcanic Torches and burn up shortly after.</p>
+	<p>When he uses <b>Quadrupedal Impact</b>, you'll need to rush to the center of the wall that he will use this on and angle yourself slightly left or right towards a safe spot. If <b>Quadrupedal Impact</b>
+		went first, you'd need to angle yourself the right way to avoid the <b>Quadrupedal Crush</b> that happens soon after. If <b>Quadrupedal Impact</b> went second, then you'd need to ride it away from the
+		<b>Volcanic Torches</b>. So no matter what, always be mindful of where <b>Quadrupedal Impact</b> will move you!</p>
+	<p>Below is an image of how to ride the <b>Quadrupedal Impact</b> to the safe column if it's the last attack which precedes <b>Volcanic Torches</b>. Notice how the party is
+		slightly offset from the center of the wall, but not by too much.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Centaur2_Impact_Hector.png">
+
+	<p>Here is a video example of the mechanic with <b>Conceptual Tetraflare</b>, <b>Quadrupedal Impact</b>, then <b>Quadrupedal Crush</b>.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp1/P8S_Phase_1_Centaur2_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<h2 id="snake2">Reforged Reflection (Snake 2)</h2>
+	<p>This mechanic looks daunting, but it's actually really simple. You only have to stand in 2 spots throughout the entire mechanic. First let's look at the debuffs.
+		Everyone has a conal gaze and a snake AOE this time, but only a few players have a 3rd debuff, which is role-based. We'll get back to that later.</p>
+	<img src="./../images/p8sp1/P8S_Phase_1_Snake2_Debuffs_Hector.png">
+
+	<p>Everyone is going to stand in static spots based on the 2nd image. You safe spot is the center 2x2 white squares (just like in Normal mode), and each player should be near the center of
+		a square. There is a Lahabrea mask at the midpoint, and you can stand near it slightly offset towards the center. Just like Snake1, the snakes will either rotate clockwise and spawn on the
+		cardinals, or they'll rotate counterclockwise and spawn on intercardinals. Either look directly at an intercardinal or a cardinal to avoid looking at them.
+		Everyone will look at their nearest snake for their conal debuff. For the Reaper in the image, they'll either look at the West snake if the snakes spawned on cardinals, or they'll look
+		at the SW snake if the snakes spawned on intercardinals. Similarly, the Warrior will either look at the North snake or the NE snake.</p>
+		<img src="./../images/p8sp1/P8S_Phase_1_Snake2_Spriggan_Hector.png">
+
+	<p>After both debuffs expire, you'll need to handle the 3rd debuff. 2 supports will have the same 3rd debuff and 2 DPS will have another same debuff. After both debuffs expire, he will cast <b>Illusory
+		Creation</b> and a Hephaistos clone will spawn. He will fire a laser directly in front of him and kill 2 snakes in his way. This leaves you with 2 remaining snakes that you will have to hide around.
+		The orange circle debuff is a omnidirectional gaze attack, which will petrify everyone who's not hiding behind a snake. The purple snake debuff is a stack AOE. Use Snake1 logic to find out which snake
+		Group 1 and Group 2 should go to. In this image, the Hephaistos clone spawned North and will kill the North and South snakes. This means Group 1 should go West and Group 2 should go East. The person
+		with the omnidirectional should stand outside and the rest of the party should stand on the inside as pictured below.</p>
+		<img src="./../images/p8sp1/P8S_Phase_1_Snake2_Third_Debuff_Hector.png">
+
+	<p>Just like with Snake1, people in the same light party may have the same 3rd debuff. If this happens, you have to do a tank flex / melee flex as necessary. You should also consider "no debuff"
+		as a debuff. For example, if M1 and R1 have no 3rd debuff, you can deduce that both M2 and R2 have the 3rd debuff. This means melees should swap groups. You only do tank / melee swaps for the
+		3rd debuff (an omnidirectional gaze attack or a stack AOE), since everyone will have the first 2 debuffs (a conal gaze and a snake AOE). The first 2 debuffs with the conal and the green snake
+		AOE will always be resolved in your static positions seen in image 2.</p>
+	<p>In short, Snake2 is: stand in your static spot, figure out if snakes will pop out on cardinals or intercardinals and look directly at an intercardinal or cardinal accordingly to avoid looking at them,
+		and after they pop out look straight at the closest snake. After 2 debuffs expire, find where the Hephaistos clone is; the snakes in front of it will die. Find the snakes that won't die and use Snake1
+		logic (Group 1 CCW, Group 2 CW) to find which snake to hide behind. Tanks and melees swap as necessary.</p>
+
+	<p>Here is a video example of the mechanic from melee1's POV, cardinal snake spawns, the Hephaistos clone spawning north and cleaving the north and south snakes, and the omnidirectional gaze debuff.</p>
+	<video width="720" height="480" autoplay loop muted>
+		<source src="./../images/p8sp1/P8S_Phase_1_Snake2_Example.mp4" type="video/mp4"/>
+	</video>
+
+	<p>After this, Hephaistos will do one raidwide and then enrage. If you push him below 50%, you'll be graced with his second phase.</p>
+
+	<div class="hintbox" id="timeline">
+		<b>Timeline</b>
+		<ul>
+			<li>Genesis of Flame</li>
+			<li>Conceptual Tetraflare / Conceptual Octaflare</li>
+			<li>Volcanic Torches</li>
+			<li>Sunforge</li>
+			<li>Flameviper</li>
+			<li><b><a href="#centaur1">Reforged Reflection (Centaur 1)</a></b></li>
+			<li>Rearing Rampage</li>
+			<li>Stomp Dead</li>
+			<li>Illusory Creation</li>
+			<li>Creation on Command</li>
+			<li><b><a href="#manifold">Manifold Flames</a></b></li href="#manifold">
+			<li>Tetraflare / Nest of Flamevipers</li>
+			<li>Volcanic Torches</li>
+			<li>Genesis of Flame</li>
+			<li><b><a href="#snake1">Reforged Reflection (Snake 1)</a></b></li>
+			<li>Gorgomanteia</li>
+			<li>Into the Shadows</li>
+			<li>Ektothermos</li>
+			<li>Conceptual Tetraflare / Conceptual Octaflare</li>
+			<li><b><a href="#fourfold">Fourfold Fires</a></b></li>
+			<li>Cthonic Vent</li>
+			<li>Tetraflare / Octaflare</li>
+			<li>Sunforge</li>
+			<li>Flameviper</li>
+			<li><b><a href="#centaur2">Reforged Reflection (Centaur 2)</a></b></li>
+			<li>Quadrupedal Impact / Quadrupedal Crush</li>
+			<li>Conceptual Diflare / Conceptual Tetraflare</li>
+			<li>Blazing Footfalls</li>
+			<li>Flameviper</li>
+			<li><b><a href="#snake2">Reforged Reflection (Snake 2)</a></b></li>
+			<li>Gorgomanteia</li>
+			<li>Into the Shadows</li>
+			<li>Illusory Creation</li>
+			<li>Genesis of Flame</li>
+			<li>Genesis of Flame (Enrage)</li>
+		</ul>
+	</div>
+</body>
+
+</html lang="en">
